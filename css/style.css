@@ -1,0 +1,21 @@
+nav ol li
+{
+display: inline-block ;
+margin-right: 20px;
+}
+
+a{
+
+    margin-right: 100px;
+    
+  }
+
+body{
+    background-image: url('../3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  div{
+      display: inline-block;
+  }
