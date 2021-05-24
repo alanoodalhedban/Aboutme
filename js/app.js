@@ -1,10 +1,10 @@
 'use strict' ;
 
-let userage  = prompt('Is your age between(18-50)?');
+let Userage  = prompt('Is your age between(18-50)?');
 
 
 
-switch(userage.toLowerCase()) {
+switch(Userage.toLowerCase()) {
     case 'yes' :
     case  'y' :
         // console.log('correct') 
@@ -79,7 +79,11 @@ let Ubreak = prompt('Do you eat breakfast early?');
        alert('This age is not suitable') ;
        break;
  }
- 
+
+let Username =prompt('what is your name ?');
+
+alert('Welcome to our site '  +  Username   +   'we hope you like it') ;
+
 
 
 
