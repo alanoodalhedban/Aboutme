@@ -83,12 +83,14 @@ case  'n' :
 let Username =prompt('what is your name ?');
 
 alert('Welcome to our site '  +  Username   +   'we hope you like it') ;
+let score =0 ;
 
 let num =prompt('Guess A number please');
 num =Number(num);
 for(let i=0;i<=4;i++){
   if (num===4){
     alert('correct');
+    score++;
     break;
   }else if(num<4){
     alert('Too Low');
@@ -103,7 +105,7 @@ for(let i=0;i<=4;i++){
 
 }
 
-let score =0 ;
+
 
 let Bestfood =['apple','chiken','coffe','choclate','Pepsi','meat'];
 // console.log(Bestfood);
