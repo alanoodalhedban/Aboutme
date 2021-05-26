@@ -85,20 +85,19 @@ let Username =prompt('what is your name ?');
 alert('Welcome to our site '  +  Username   +   'we hope you like it') ;
 let score =0 ;
 
-let num =prompt('Guess A number please');
-num =Number(num);
+
 for(let i=0;i<=4;i++){
+  let num =prompt('Guess A number please');
+num =Number(num);
   if (num===4){
     alert('correct');
     score++;
     break;
   }else if(num<4){
     alert('Too Low');
-    num =prompt('guess the number again');
 
   }else if (num>4){
     alert('Too high');
-    num=prompt('guess the number a gain');
   }else {
     alert('The correct Answer is 4') ;
   }
