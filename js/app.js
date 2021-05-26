@@ -107,44 +107,46 @@ let score =0 ;
 
 let Bestfood =['apple','chiken','coffe','choclate','Pepsi','meat'];
 // console.log(Bestfood);
-for(let i=0;i<Bestfood.length;i++){
+for(let i=0;i<6;i++){
   let Bfood =prompt('what is  the example of healthy food?') ;
 
   if(Bfood===Bestfood[0]){
     alert('That is right' );
     score ++ ;
     alert(`Your score is  ${score}`);
-    score ++ ;
     break;
 
   }
-  else if (Bfood===Bestfood[1]){
-    Bfood=prompt('wrong guess');
+  // else if (Bfood===Bestfood[1]){
+  //   Bfood=prompt('wrong guess');
 
-  }
-  else if (Bfood===Bestfood[2]){
-    Bfood==prompt('wrong guess');
-  }
-  else if (Bfood===Bestfood[3]){
-    Bfood==prompt('wrong guess');
-  }
-  else if (Bfood===Bestfood[4]){
-    Bfood==prompt('wrong guess');
-  }
-  else if (Bfood===Bestfood[5]){
-    Bfood==prompt('wrong guess');
-  }
+  // }
+  // else if (Bfood===Bestfood[2]){
+  //   Bfood==prompt('wrong guess');
+  // }
+  // else if (Bfood===Bestfood[3]){
+  //   Bfood==prompt('wrong guess');
+  // }
+  // else if (Bfood===Bestfood[4]){
+  //   Bfood==prompt('wrong guess');
+  // }
+  // else if (Bfood===Bestfood[5]){
+  //   Bfood==prompt('wrong guess');}
+  
   else 
   {  
-    
-    alert('the example of healthy food is'+  Bestfood[0]);
-    alert(`Your score is  ${score}`);
-
+    alert('wrong guess,try again') ;
   }
-
- 
- 
 }
+alert('you finished your attempts');
+for(let x=0;x<Bestfood.length;x++){
+  console.log(Bestfood);
+
+
+}
+alert(`Your score is  ${score}`);
+ 
+ 
 
 
 
