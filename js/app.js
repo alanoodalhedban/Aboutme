@@ -6,13 +6,13 @@ let Userage  = prompt('Is your age between(18-50)y?');
 
 switch(Userage.toLowerCase()) {
 case 'yes' :
-case  'y' :
+case 'y' :
   // console.log('correct')
   alert('this is fine');
   break;
 
 case 'no' :
-case  'n' :
+case 'n' :
   // console.log('Incorrect')
   alert('This age is not suitable') ;
   break;
@@ -22,13 +22,13 @@ case  'n' :
 let Uasck = prompt('Do you suffer from diseases?');
 switch(Uasck.toLowerCase()) {
 case 'yes' :
-case  'y' :
+case 'y' :
   // console.log('correct')
   alert('this is suitable');
   break;
 
 case 'no' :
-case  'n' :
+case 'n' :
   // console.log('Incorrect')
   alert('This age is not suitable') ;
   break;
@@ -37,13 +37,13 @@ case  'n' :
 let Udrink = prompt('Do you drink coffee or tea?');
 switch(Udrink.toLowerCase()) {
 case 'yes' :
-case  'y' :
+case 'y' :
   // console.log('correct')
   alert('this is suitable');
   break;
 
 case 'no' :
-case  'n' :
+case 'n' :
   // console.log('Incorrect')
   alert('This age is not suitable') ;
   break;
@@ -53,13 +53,13 @@ case  'n' :
 let Ubreak = prompt('Do you eat breakfast early?');
 switch(Ubreak.toLowerCase()) {
 case 'yes' :
-case  'y' :
+case 'y' :
   // console.log('correct')
   alert('this is suitable');
   break;
 
 case 'no' :
-case  'n' :
+case 'n' :
   // console.log('Incorrect')
   alert('This age is not suitable') ;
   break;
@@ -68,13 +68,13 @@ case  'n' :
 let Uweight = prompt('Do you weigh between 45-60?');
 switch( Uweight.toLowerCase()) {
 case 'yes' :
-case  'y' :
+case 'y' :
   // console.log('correct')
   alert('this is suitable');
   break;
 
 case 'no' :
-case  'n' :
+case 'n' :
   // console.log('Incorrect')
   alert('This age is not suitable') ;
   break;
@@ -82,13 +82,13 @@ case  'n' :
 
 let Username =prompt('what is your name ?');
 
-alert('Welcome to our site '  +  Username   +   'we hope you like it') ;
+alert('Welcome to our site ' + Username + 'we hope you like it') ;
 let score =0 ;
 
 
 for(let i=0;i<=4;i++){
   let num =prompt('Guess A number please');
-num =Number(num);
+  num =Number(num);
   if (num===4){
     alert('correct');
     score++;
@@ -109,42 +109,25 @@ num =Number(num);
 let Bestfood =['apple','chiken','coffe','choclate','Pepsi','meat'];
 // console.log(Bestfood);
 for(let i=0;i<6;i++){
-  let Bfood =prompt('what is  the example of healthy food?') ;
+  let Bfood =prompt(' guess the example of healthy food?') ;
 
-  if(Bfood===Bestfood[0]){
-    alert('That is right' );
-    score ++ ;
-    alert(`Your score is  ${score}`);
-    break;
+  for(let x=0;x<Bestfood.length;x++){
+    console.log(Bestfood);
+    if(Bfood===Bestfood[x]){
+      alert('That is right' );
+      score ++ ;
+      i=20;
+      break;
 
+    }
   }
-  // else if (Bfood===Bestfood[1]){
-  //   Bfood=prompt('wrong guess');
 
-  // }
-  // else if (Bfood===Bestfood[2]){
-  //   Bfood==prompt('wrong guess');
-  // }
-  // else if (Bfood===Bestfood[3]){
-  //   Bfood==prompt('wrong guess');
-  // }
-  // else if (Bfood===Bestfood[4]){
-  //   Bfood==prompt('wrong guess');
-  // }
-  // else if (Bfood===Bestfood[5]){
-  //   Bfood==prompt('wrong guess');}
-  
-  else 
-  {  
-    alert('wrong guess,try again') ;
+  if(i===5){
+    alert('you finished your attempts'+Bestfood);
   }
-}
-alert('you finished your attempts');
-for(let x=0;x<Bestfood.length;x++){
-  console.log(Bestfood);
-
 
 }
+
 alert(`Your score is  ${score}`);
  
  
